@@ -1,0 +1,341 @@
+/*font-family: 'Quattrocento', serif;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Serif', serif;
+*/
+/* canva
+Red #970c10
+Slate #BFCAD0
+Cool Gray #474440
+Gunmetal gray #738580
+
+*/
+
+body {
+  margin: 0;
+  /*font-family: "Lato", sans-serif;*/
+}
+
+p {
+  font-family: "Quattrocento", serif;
+}
+
+/* h3 {
+  font-family: 'Quattrocento Sans', sans-serif;
+} */
+
+img-me {
+  border-radius: 50px;
+}
+
+/*-------------------------------------------------------
+..... Sidebar .....
+---------------------------------------------------------*/
+
+/*  sidebar */
+.sidebar {
+  margin: 0;
+  padding: 30px 0 0 0;
+  width: 200px;
+  /*background-color: #BFCAD0; i am putting colours in the scss*/
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 20;
+}
+
+.sidebar a {
+  display: block;
+  color: #474440;
+  padding: 16px;
+  text-decoration: none;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+/* .sidebar a.active {
+  background-color: #E5DDC8;
+  color: white;
+} */
+
+.sidebar a:hover:not(.active) {
+  background-color: #738580;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  /* put in another photo of me background: url("...") top center;*/
+  /*margin: 200px;*/
+  background-size: cover;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#hero .hero-container {
+  margin: 200px;
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+/*experimenting with this - not using bootstrap studio */
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*-------------------------------------------------------
+..... Sections .....
+---------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #474440;
+}
+
+/*to get a line after the heading, use ::after.  The block has a width, height.  content=""  */
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 4px;
+  background: #738580;
+  bottom: 0;
+  left: 0;
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+..... cv ...... 
+--------------------------------------------------------------*/
+.cv .cv-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.cv .cv-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+
+  position: relative;
+}
+
+.cv .cv-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.cv .cv-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cv .cv-item ul {
+  padding-left: 20px;
+}
+
+.cv .cv-item ul li {
+  padding-bottom: 10px;
+}
+
+.cv .cv-item:last-child {
+  padding-bottom: 0;
+}
+
+.cv .cv-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+}
+
+/*--------------------------------------------------------------
+...... Contact  ...... 
+--------------------------------------------------------------*/
+.contact {
+  padding-bottom: 130px;
+}
+
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .form-group {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

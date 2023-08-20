@@ -1,0 +1,40 @@
+/*Red #970c10
+Slate #BFCAD0
+Cool Gray #474440
+Gunmetal gray #738580
+
+FACING FORWARD
+Sand dollar #E5DDC8
+Teal #01949A
+Navy Blue #004369
+Red #DB1F48
+
+
+*/
+bullets-text {
+  font-family: "Quattrocento", serif;
+  font-size: 12pt;
+  color: red;
+}
+
+.sidebar {
+  background-color: #bfcad0;
+}
+
+.btn-teal {
+  background-color: #01949a;
+  color: white;
+}
+
+.cv .cv-item h4 {
+  font-family: "Quattrocento", serif;
+}
+
+.cv .cv-item {
+  border-left: 2px solid #738580;
+}
+
+.cv .cv-item::before {
+  background: #fff;
+  border: 2px solid #738580;
+}/*# sourceMappingURL=cv-Scss.css.map */

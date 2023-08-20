@@ -1,0 +1,63 @@
+//SCSS for cv task
+
+/*Red #970c10
+Slate #BFCAD0
+Cool Gray #474440
+Gunmetal gray #738580
+
+FACING FORWARD
+Sand dollar #E5DDC8
+Teal #01949A
+Navy Blue #004369
+Red #DB1F48
+
+
+*/
+$main-colour: red;
+$secondary-colour: #738580;
+
+$font-main: "Quattrocento", serif;
+$font-header: "Quattrocento Sans", sans-serif;
+$button-main-colour: #01949a;
+
+$navbar-font: "Roboto", sans-serif;
+$navbar-font-size: 16pt;
+
+$font-size-p: 12pt;
+$header-font-size: 40px;
+
+$sidebar-background: #bfcad0;
+$sidebar-text: #474440;
+$side-bar-active: #e5ddc8;
+
+@mixin bullets-styler($font-family, $font-size, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color;
+}
+
+bullets-text {
+  @include bullets-styler($font-main, $font-size-p, $main-colour);
+}
+
+.sidebar {
+  background-color: #bfcad0;
+}
+
+.btn-teal {
+  background-color: #01949a;
+  color: white;
+}
+
+.cv .cv-item h4 {
+  font-family: $font-main;
+}
+
+.cv .cv-item {
+  border-left: 2px solid $secondary-colour;
+}
+
+.cv .cv-item::before {
+  background: #fff;
+  border: 2px solid $secondary-colour;
+}
