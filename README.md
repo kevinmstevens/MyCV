@@ -10,7 +10,8 @@ Who created it: I did.
 
 ## Getting Started
 
-* n/a
+* The website can be accessed [here](https://kevinmstevens.github.io/MyCV/index.html)
+
 ### Dependencies
 
 * none
@@ -20,17 +21,13 @@ Who created it: I did.
 * How/where to download your program
 * Any modifications needed to be made to files/folders
 
-### Executing program
+### Usage
 
-* The website can be accessed [here](
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* The website can be accessed [here](https://kevinmstevens.github.io/MyCV/index.html)
 
 ## Help
 
-Any advise for common problems or issues.
+Any advice for common problems or issues.
 ```
 command to run if program contains helper info
 ```
