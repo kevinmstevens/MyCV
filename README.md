@@ -4,9 +4,13 @@ My first web project - CV
 
 ## Description
 
-A simple website for my CV
+What it is: A simple website for a prototype of my simple CV
+Why it was created: I am practicing my web development skils.
+Who created it: I did.
+
 ## Getting Started
 
+* n/a
 ### Dependencies
 
 * none
@@ -18,7 +22,7 @@ A simple website for my CV
 
 ### Executing program
 
-* How to run the program
+* The website can be accessed [here](
 * Step-by-step bullets
 ```
 code blocks for commands
@@ -35,8 +39,8 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Kevin Stevens
-ex. kevin.65536@gmail.com
+* Kevin Stevens
+* email: kevin.65536@gmail.com
 
 ## Version History
 
@@ -47,8 +51,9 @@ ex. kevin.65536@gmail.com
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+* n/a
+* This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+* n/a
