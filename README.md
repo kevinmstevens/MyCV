@@ -4,9 +4,9 @@ My first web project - CV
 
 ## Description
 
-What it is: A simple website for a prototype of my simple CV
-Why it was created: I am practicing my web development skils.
-Who created it: I did.
+What it is: A simple website for a prototype of my simple CV.  <br>
+Why it was created: I am practicing my web development skils. <br>
+Who created it: I did!
 
 ## Getting Started
 
